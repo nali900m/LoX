@@ -13,7 +13,7 @@ export default function APropos() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#3B5998',
     alignItems: 'center',
     justifyContent: 'center',
   },

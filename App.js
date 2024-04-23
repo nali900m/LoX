@@ -25,7 +25,7 @@ export default function App() {
         <Tab.Screen name="Personnages" component={Personages} 
         
         />
-        <Tab.Screen name="Apropos" component={APropos} />
+        <Tab.Screen name="À propos" component={APropos} />
       </Tab.Navigator>
     </NavigationContainer>
     </>
@@ -39,5 +39,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  
+
 });
