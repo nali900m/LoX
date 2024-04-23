@@ -7,7 +7,7 @@ const GetChar = () => {
     const [loading, setLoading] = useState(false);
 
     const fetchPosts = async () =>{ 
-        fetch('http://api-fantasygame.eu-4.evennode.com/get-character/'+4)
+        fetch('http://api-fantasygame.eu-4.evennode.com/get-character/'+1)
         .then(response=>response.json())
         .then(data=>{
             setCharacter(data)
