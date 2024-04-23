@@ -29,18 +29,12 @@ const GetCharacters = () => {
             ) : (
                 characters.map((character) => {
                     return(
-                            <>
-                            <View style = {{
-                                backgroundColor: '#C0C0C0',
-                                margin: 25,
-                            }}>
+                            <View style = {styles.container}>
                             <Card.Title> {character.name} </Card.Title>
                             <Card.Divider/>
                             <Text> {character.description} </Text>
                             <Text style = {{color: 'red'}}>Rareté: {character.rarity}/5 </Text>
                             </View>
-                            
-                            </>
                     )
                 })
             )}
@@ -51,19 +45,14 @@ const GetCharacters = () => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: 'black',
-      alignItems: 'center',
-      justifyContent: 'center',
+      backgroundColor: 'white',
+      margin: 15,
       
     },
     title : {
       color: 'white',
       fontSize: 50,
     },
-    tabStyle: {
-      backgroundColor: 'black',
-      fontSize: 50
-    }
   });
 
 export default GetCharacters;

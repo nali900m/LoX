@@ -5,7 +5,7 @@ import GetCharacters from '../CustomComponents/PersoLists';
 export default function Personages() {
   return (
     <View style={styles.container}>
-        <Text style={styles.titre} color="red">Les Personages</Text>
+        <Text style={styles.titre}>Les Personages</Text>
         <GetCharacters />
     </View>
   );
