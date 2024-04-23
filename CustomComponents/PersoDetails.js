@@ -47,7 +47,7 @@ export default function UnPerso(props){
                                 <Text>Point de vie : {character.hp}</Text>
                                 <Text>Point d'attaque : {character.attack_points}</Text>
                                 <Text>Spell : {character.main_attack}</Text>
-                                </View>                      
+                                </View>            
                                 </>
                 )}
                 </View>

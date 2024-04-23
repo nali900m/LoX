@@ -6,7 +6,7 @@ export default function Personages() {
   return (
     <View style={styles.container}>
         <Text style={styles.titre}>Les Personages</Text>
-        <GetCharacters />
+        <GetCharacters/>
     </View>
   );
 }

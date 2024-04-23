@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { Card } from '@rneui/themed';
-import { StyleSheet, Text, View, ActivityIndicator, FlatList, Image, ScrollView, Button } from 'react-native';
+import { StyleSheet, Text, View, ActivityIndicator, FlatList, Image, ScrollView, Button, TouchableOpacity, Alert } from 'react-native';
 import { color } from '@rneui/base';
 
 const GetCharacters = () => {
@@ -30,10 +30,12 @@ const GetCharacters = () => {
                 characters.map((character) => {
                     return(
                             <View style = {styles.container}>
+                            <TouchableOpacity onPress={() => Alert.alert(" ")}>
                             <Card.Title> {character.name} </Card.Title>
                             <Card.Divider/>
                             <Text> {character.description} </Text>
-                            <Text style = {{color: 'red'}}>Rareté: {character.rarity}/5 </Text>
+                            <Text>Rareté: {character.rarity}/5 </Text>
+                            </TouchableOpacity>
                             </View>
                     )
                 })
