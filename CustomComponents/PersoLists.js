@@ -23,7 +23,7 @@ const GetCharacters = () => {
     }, []);
 
     return (
-            <ScrollView style={{color: 'white'}}>
+            <ScrollView >
             {loading ? (
                 <ActivityIndicator />
             ) : (
